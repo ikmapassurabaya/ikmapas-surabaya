@@ -55,7 +55,7 @@ function NewsSection() {
                 <small className='text-muted'>25 Februari 2023</small>
               </li>
               <li className="list-group-item">
-                <p className='fw-bold'>Resmi! Pengurus Ikmapas 2023-2024 Telah Dilantik Pada Minggu  Mei 2023</p>
+                <p className='fw-bold'>Resmi! Pengurus Ikmapas 2023-2024 Telah Dilantik Pada Minggu 7 Mei 2023</p>
                 <small className='text-muted'>1 hari lalu</small>
               </li>
             </ul>

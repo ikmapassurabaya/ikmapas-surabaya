@@ -1,32 +1,41 @@
-import MainNavbar from "@/components/navbars/mainNavbar";
-import Link from "next/link";
-import img from '../../images/about.jpg';
+import img1 from '../../images/about.jpg';
+import ad from '../../images/adv.png';
 import Image from "next/image";
 import MainFooter from "@/components/footers/mainFooter";
+import { CSSProperties } from "react";
+import NavbarLinks from "@/components/navbars/navbarLinks";
 
-function About() {
+function newsDetail() {
+  const jumbotronStyle: CSSProperties = {
+    backgroundImage: `url(${img1.src})`
+  }
+
   return (
     <main>
-      <MainNavbar>
-        <Link className="btn btn-primary" href='/'>Kembali</Link>
-      </MainNavbar>
-      <section>
-        <div className="container-fluid bg-primary">
-          <div className="row">
-            <div className="col text-center">
-              <Image className="img-fluid" style={{ maxHeight: '75vh' }} alt="" src={img} />
+      <NavbarLinks />
+      <section className="mt-5 mb-3">
+        <div className="container">
+          <div className="row justify-content-center align-items-center rounded">
+            <div className="col">
+              <div className="card border-0 jumbotron" style={jumbotronStyle}>
+                <div className="card-body d-flex justify-content-center align-items-center" style={{ position: 'relative', zIndex: '1' }}>
+                  <div className="text-white text-center">
+                    <p><span className="badge bg-primary">Tentang Kami</span></p>
+                    <h2 className="fw-bold">IKMAPAS Surabaya - Dulur Sak Lawase!!!</h2>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="pt-3 pb-5">
+      <section className="py-3">
         <div className="container">
           <div className="row">
-            <div className="col-12">
-              <h1 className="text-center fw-bold text-primary">Tentang IKMAPAS</h1>
-              <div style={{ textAlign: 'justify' }}>
+            <div className="col-12 col-md-8 col-lg-9">
+              <div className='text-justify'>
                 <p>
-                  IKMAPAS Surabaya merupakan organisasi mahasiswa yang berasal dari Pasuruan dan berkuliah di Surabaya. Organisasi ini didirikan dengan tujuan untuk membawa misi dan visi dari mahasiswa Pasuruan ke lingkungan kampus di Surabaya. IKMAPAS Surabaya berkomitmen untuk menjadi wadah bagi para mahasiswa Pasuruan yang ingin mempererat hubungan sosial, meningkatkan kualitas diri, serta berpartisipasi aktif dalam kegiatan-kegiatan yang positif.
+                  <span className="dropcap bg-dark text-white px-2">I</span>KMAPAS Surabaya merupakan organisasi mahasiswa yang berasal dari Pasuruan dan berkuliah di Surabaya. Organisasi ini didirikan dengan tujuan untuk membawa misi dan visi dari mahasiswa Pasuruan ke lingkungan kampus di Surabaya. IKMAPAS Surabaya berkomitmen untuk menjadi wadah bagi para mahasiswa Pasuruan yang ingin mempererat hubungan sosial, meningkatkan kualitas diri, serta berpartisipasi aktif dalam kegiatan-kegiatan yang positif.
                 </p>
                 <p>
                   Sebagai organisasi mahasiswa, IKMAPAS Surabaya juga aktif dalam kegiatan sosial kemasyarakatan dan lingkungan. Kami memiliki program-program yang dirancang khusus untuk memberikan dampak positif bagi masyarakat sekitar kampus dan lingkungan hidup. Kami berupaya untuk mengajak seluruh mahasiswa Pasuruan yang berkuliah di Surabaya untuk turut serta dalam kegiatan-kegiatan yang kami selenggarakan.
@@ -49,22 +58,26 @@ function About() {
                 <p>
                   Misi IKMAPAS SURABAYA adalah:
                 </p>
-                <p>
-                  1. Meningkatkan ketakwaan kepada Tuhan Yang Maha Esa.
-                </p>
-                <p>
-                  2. Mempererat rasa kekeluargaan mahasiswa Pasuruan di Surabaya.
-                </p>
-                <p>
-                  3. Menyosialisasikan pendidikan di Surabaya kepada putra-putri di Pasuruan.
-                </p>
-                <p>
-                  4. Menanamkan rasa tanggung jawab dalam diri setiap anggota.
-                </p>
-                <p>
-                  5. Membentuk generasi yang terdidik untuk dikembangkan di Pasuruan.
-                </p>
+                <ol>
+                  <li>Meningkatkan ketakwaan kepada Tuhan Yang Maha Esa.</li>
+                  <li>Mempererat rasa kekeluargaan mahasiswa Pasuruan di Surabaya.</li>
+                  <li>Menyosialisasikan pendidikan di Surabaya kepada putra-putri di Pasuruan.</li>
+                  <li>Menanamkan rasa tanggung jawab dalam diri setiap anggota.</li>
+                  <li>Membentuk generasi yang terdidik untuk dikembangkan di Pasuruan.</li>
+                </ol>
               </div>
+            </div>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="card border-0 mb-3" style={{ backgroundColor: 'var(--bs-primary-bg-subtle)' }}>
+                <div className="card-body p-3">
+                  <p>Subscribe untuk informasi konten lebih banyak</p>
+                  <form>
+                    <input type="email" name="email" placeholder="Email..." className="form-control mb-3" />
+                  </form>
+                  <button className="btn btn-primary">Subscribe</button>
+                </div>
+              </div>
+              <Image src={ad} alt="" className="img-fluid" />
             </div>
           </div>
         </div>
@@ -74,4 +87,5 @@ function About() {
   );
 }
 
-export default About;
+
+export default newsDetail;

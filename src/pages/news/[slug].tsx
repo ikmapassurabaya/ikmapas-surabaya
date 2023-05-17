@@ -49,8 +49,8 @@ function newsDetail() {
           <div className="row">
             <div className="col-12 col-md-8 col-lg-9">
               <div style={{ textAlign: 'justify' }}>
-                <p>S
-                  <span className="dropcap bg-dark text-white px-2">s</span>eorang mahasiswa Universitas Negeri Surabaya (Unesa) bernama Fairuzul Wafi diduga mengalami kehilangan handphone (HP) pada saat menghadiri acara resepsi satu abad Nahdlatul Ulama di Surabaya pada tanggal 6 Februari 2023 pukul 21.50.
+                <p>
+                  <span className="dropcap bg-dark text-white px-2">S</span>eorang mahasiswa Universitas Negeri Surabaya (Unesa) bernama Fairuzul Wafi diduga mengalami kehilangan handphone (HP) pada saat menghadiri acara resepsi satu abad Nahdlatul Ulama di Surabaya pada tanggal 6 Februari 2023 pukul 21.50.
 
                   Berdasarkan informasi yang diperoleh, Fairuzul Wafi menghadiri acara tersebut bersama dengan teman-temannya. Namun sayangnya, saat acara berlangsung, HP miliknya diduga hilang karena kecopetan. Diduga,
                   hal tersebut terjadi karena Fairuzul lalai dan tidak mengamankan barang bawaannya dengan baik.
